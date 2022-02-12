@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Bootstrap css cdn -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+        />
+        <!-- cdn css slick jQuery -->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+        />
+        <!-- css link -->
+        <link rel="stylesheet" href="./css/general.css" />
+        <link rel="stylesheet" href="./css/header.css" />
+        <link rel="stylesheet" href="./css/main.css" />
+        <link rel="stylesheet" href="./css/footer.css" />
+        <link rel="stylesheet" href="./css/mediaqueries.css" />
+        <!-- ggogle fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+            rel="stylesheet"
+        />
+        <!-- fontawesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+            integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <!-- title -->
+        <title>Evaluation_Nuno_Fernandes</title>
+    </head>
+    <body>
+        <header id="header">
+            <div class="container-fluid">
+                <!-- menu -->
+                <div id="menu" class="navbar-collapse">
+                    <ul>
+                        <li>
+                            <a href="#location" class="nav-link fermer"
+                                >Louer une voiture</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#location" class="nav-link fermer"
+                                >Louer un utilitaire</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#location" class="nav-link fermer"
+                                >Réserver un chauffeur</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#location" class="nav-link fermer"
+                                >Découvrez nous agences</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#location" class="nav-link fermer"
+                                >Mon compte</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#contact" class="nav-link fermer"
+                                >Contact</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+                <button
+                    id="menuBar"
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <!-- carrousel baniere -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="monCarrousel">
+                            <div>
+                                <img
+                                    src="./img/background.jpg"
+                                    class="d-block w-100"
+                                    alt="image d'une voiture mercedes"
+                                />
+                            </div>
+                            <div>
+                                <img
+                                    src="./img/opel.jpg"
+                                    class="d-block w-100"
+                                    alt="image d'une voiture opel"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- titre -->
+                <div class="row">
+                    <div class="col-12 text-center title_baniere">
+                        <h1>Bienvenue à bord</h1>
+                        <p>Location de voitures 24h/24 et 7j/7</p>
+                    </div>
+                </div>
+                <!-- barre recherche -->
+                <div id="location" class="row form-date">
+                    <div class="col-sm-7 mx-auto">
+                        <div class="row background-gris">
+                            <div
+                                class="col-lg-3 col-sm-4 background-gris pt-2 pb-2 posQuerie"
+                            >
+                                <select
+                                    class="form-select"
+                                    aria-label="Default select example"
+                                >
+                                    <option selected>Adresse de départ</option>
+                                    <option value="1">Paris</option>
+                                    <option value="2">Montpellier</option>
+                                    <option value="3">Lyon</option>
+                                </select>
+                            </div>
+                            <div
+                                class="col-lg-3 col-sm-4 background-gris pt-2 pb-2 posQuerie"
+                            >
+                                <div class="input-group">
+                                    <input
+                                        type="text"
+                                        id="date1"
+                                        class="form-control"
+                                        placeholder="Début de location"
+                                        aria-label="Username"
+                                        aria-describedby="basic-addon1"
+                                    />
+                                    <span
+                                        class="input-group-text"
+                                        id="basic-addon1"
+                                        ><i
+                                            class="fa-solid fa-calendar-days"
+                                        ></i
+                                    ></span>
+                                </div>
+                            </div>
+                            <div
+                                class="col-lg-3 col-sm-4 background-gris pt-2 pb-2 posQuerie"
+                            >
+                                <div class="input-group">
+                                    <input
+                                        type="text"
+                                        id="date2"
+                                        class="form-control"
+                                        placeholder="Fin de location"
+                                        aria-label="Username"
+                                        aria-describedby="basic-addon1"
+                                    />
+                                    <span
+                                        class="input-group-text"
+                                        id="basic-addon1"
+                                        ><i
+                                            class="fa-solid fa-calendar-days"
+                                        ></i
+                                    ></span>
+                                </div>
+                            </div>
+                            <div
+                                class="col-sm-3 h-100 pe-0 block_bouton pt-2 pb-2 pe-3"
+                            >
+                                <button
+                                    class="btn btn-success w-100 form_button"
+                                    type="submit"
+                                >
+                                    Valider
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- main -->
+        <main class="container">
+            <!--  -->
+            <div class="row">
+                <div class="col-6 para-select">
+                    <p><b>4</b> résultats</p>
+                </div>
+                <div class="col-6 select">
+                    <select name="prix" id="prix" class="select-control">
+                        <option value="1t">Prix croissant</option>
+                        <option value="1t">Prix décroissant</option>
+                        <option value="1t">Plus populaire</option>
+                    </select>
+                </div>
+            </div>
+            <!-- voiture 1 -->
+            <div class="row">
+                <div class="col-5 carousel-img-voiture">
+                    <div class="monCarrouselResultat">
+                        <div>
+                            <img
+                                src="./img/vehicule1.png"
+                                class="d-block w-100 img-fluid"
+                                alt="image d'une voiture mercedes"
+                            />
+                        </div>
+                        <div>
+                            <img
+                                src="./img/vehicule2.png"
+                                class="d-block w-100"
+                                alt="image d'une voiture opel"
+                            />
+                        </div>
+                        <div>
+                            <img
+                                src="./img/vehicule3.png"
+                                class="d-block w-100"
+                                alt="image d'une voiture opel"
+                            />
+                        </div>
+                        <div>
+                            <img
+                                src="./img/vehicule4.png"
+                                class="d-block w-100"
+                                alt="image d'une voiture opel"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-7 descriptionVoiture">
+                    <h2>Peugeot 208</h2>
+                    <p>
+                        Diesel, 5 portes, GPS, AutoRadio, Forfait 1000km (0.5/km
+                        supplémentaire).
+                    </p>
+                    <p>999€ - Agence de Paris</p>
+                    <button class="btn btn-success newColor">
+                        Réserver et Payer
+                    </button>
+                </div>
+            </div>
+            <hr />
+            <!-- voiture 2 -->
+            <div class="row">
+                <div class="col-5 carousel-img-voiture">
+                    <div class="monCarrouselResultat">
+                        <div>
+                            <img
+                                src="./img/vehicule2.png"
+                                class="d-block w-100 img-fluid"
+                                alt="image d'une voiture mercedes"
+                            />
+                        </div>
+                        <div>
+                            <img
+                                src="./img/vehicule3.png"
+                                class="d-block w-100"
+                                alt="image d'une voiture opel"
+                            />
+                        </div>
+                        <div>
+                            <img
+                                src="./img/vehicule4.png"
+                                class="d-block w-100"
+                                alt="image d'une voiture opel"
+                            />
+                        </div>
+                        <div>
+                            <img
+                                src="./img/vehicule1.png"
+                                class="d-block w-100"
+                                alt="image d'une voiture opel"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-7 descriptionVoiture">
+                    <h2>Ford Focus</h2>
+                    <p>
+                        Diesel, 5 portes, GPS, AutoRadio, Forfait 1000km (0.5/km
+                        supplémentaire).
+                    </p>
+                    <p>999€ - Agence de Paris</p>
+                    <button class="btn btn-success newColor">
+                        Réserver et Payer
+                    </button>
+                </div>
+            </div>
+            <hr />
+            <!-- voiture 3 -->
+            <div class="row">
+                <div class="col-5 carousel-img-voiture">
+                    <div class="monCarrouselResultat">
+                        <div>
+                            <img
+                                src="./img/vehicule3.png"
+                                class="d-block w-100 img-fluid"
+                                alt="image d'une voiture mercedes"
+                            />
+                        </div>
+                        <div>
+                            <img
+                                src="./img/vehicule4.png"
+                                class="d-block w-100"
+                                alt="image d'une voiture opel"
+                            />
+                        </div>
+                        <div>
+                            <img
+                                src="./img/vehicule1.png"
+                                class="d-block w-100"
+                                alt="image d'une voiture opel"
+                            />
+                        </div>
+                        <div>
+                            <img
+                                src="./img/vehicule2.png"
+                                class="d-block w-100"
+                                alt="image d'une voiture opel"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-7 descriptionVoiture">
+                    <h2>Audi</h2>
+                    <p>
+                        Diesel, 5 portes, GPS, AutoRadio, Forfait 1000km
+                        (0.55/km supplémentaire).
+                    </p>
+                    <p>1100€ - Agence de Paris</p>
+                    <button class="btn btn-success newColor">
+                        Réserver et Payer
+                    </button>
+                </div>
+            </div>
+            <hr />
+            <!-- voiture 4 -->
+            <div class="row">
+                <div class="col-5 carousel-img-voiture">
+                    <div class="monCarrouselResultat">
+                        <div>
+                            <img
+                                src="./img/vehicule4.png"
+                                class="d-block w-100 img-fluid"
+                                alt="image d'une voiture mercedes"
+                            />
+                        </div>
+                        <div>
+                            <img
+                                src="./img/vehicule1.png"
+                                class="d-block w-100"
+                                alt="image d'une voiture opel"
+                            />
+                        </div>
+                        <div>
+                            <img
+                                src="./img/vehicule2.png"
+                                class="d-block w-100"
+                                alt="image d'une voiture opel"
+                            />
+                        </div>
+                        <div>
+                            <img
+                                src="./img/vehicule3.png"
+                                class="d-block w-100"
+                                alt="image d'une voiture opel"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-7 descriptionVoiture">
+                    <h2>Opel Mokka</h2>
+                    <p>
+                        Diesel, 5 portes, GPS, AutoRadio, Forfait 1000km (0.4/km
+                        supplémentaire).
+                    </p>
+                    <p>1150€ - Agence de Paris</p>
+                    <button class="btn btn-success newColor">
+                        Réserver et Payer
+                    </button>
+                </div>
+            </div>
+            <hr />
+        </main>
+
+        <!-- footer -->
+        <footer id="contact">
+            <div class="col-md-5 image">
+                <div>
+                    <img src="./img/agence.jpg" alt="image de l'agance" />
+                </div>
+            </div>
+            <div class="col-md-7">
+                <p>300 boulevard de vaugirard, 75015, Paris</p>
+                <p>Ouvert 7j/7 de 09h à 13h et de 14h à 20h</p>
+                <p>0149782133</p>
+                <p>contact@vtc.com</p>
+                <p>Notre Agence de <b>Paris</b></p>
+            </div>
+            <div class="upButton">
+                <a href="#header"> <i class="fa-solid fa-angles-up"></i></a>
+            </div>
+        </footer>
+
+        <!-- bootstrap js cdn -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"
+        ></script>
+        <!-- jQuery  -->
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+            crossorigin="anonymous"
+        ></script>
+        <!-- cdn slick jQuery -->
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+        ></script>
+        <!-- js link -->
+        <script src="./js/script.js"></script>
+    </body>
+</html>

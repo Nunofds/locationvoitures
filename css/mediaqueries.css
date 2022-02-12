@@ -1,0 +1,81 @@
+/* media queries */
+@media screen and (max-width: 1024px) {
+    .form-date .block_bouton {
+        display: block;
+        width: 100%;
+    }
+    .form-date > div {
+        margin: 0 !important;
+        width: 100%;
+    }
+    .posQuerie {
+        width: 33%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* header - carrousel */
+    .monCarrousel {
+        height: 300px;
+        overflow: hidden;
+    }
+    header .slick-track .slick-slide img {
+        height: 300px;
+    }
+
+    /* formualire reservation */
+    .posQuerie {
+        display: block;
+        width: 100%;
+    }
+    /* main */
+    .carousel-img-voiture {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+    main .slick-slide .slick-current .slick-active {
+        width: 420px;
+    }
+    .descriptionVoiture {
+        display: block;
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+    }
+    .descriptionVoiture h2,
+    .descriptionVoiture p {
+        display: none;
+    }
+    /* footer */
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+    footer p {
+        display: flex;
+        justify-content: center;
+        line-height: 2rem;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .draggable {
+        height: inherit;
+    }
+    /* header - carrousel */
+    main .slick-track .slick-slide img {
+        width: 380px !important;
+    }
+    /* footer */
+    footer {
+        padding: 0 0 60px 0;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    /* header - carrousel */
+    main .slick-track .slick-slide img {
+        width: 300px !important;
+    }
+}

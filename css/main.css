@@ -1,0 +1,43 @@
+/* ***** MAIN ***** */
+.select {
+    display: flex;
+    justify-content: flex-end;
+}
+.para-select {
+    display: flex;
+    justify-content: flex-start;
+}
+.para-select p {
+    margin: 0;
+}
+.para-select,
+.select-control {
+    padding: 8px;
+}
+
+.select-control {
+    background: rgba(238, 231, 231, 0.5);
+    border-radius: 5px;
+}
+
+/* slider main */
+.descriptionVoiture {
+    padding: 60px;
+}
+
+#prev {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    font-size: 28px;
+    cursor: pointer;
+    z-index: 9;
+}
+#next {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    font-size: 28px;
+    cursor: pointer;
+    z-index: 9;
+}

@@ -1,0 +1,39 @@
+/* footer */
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: start;
+}
+footer {
+    padding: 60px;
+}
+footer .image {
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px;
+}
+footer .image img {
+    width: 200px;
+}
+
+/* up */
+.upButton {
+    position: fixed;
+    right: 60px;
+    bottom: 70px;
+}
+.upButton a {
+    color: #fff;
+}
+.upButton i {
+    position: fixed;
+    font-size: 36px;
+    padding: 10px;
+    background: rgba(163, 159, 159, 0.5);
+    border-radius: 50%;
+}
+.upButton i:hover {
+    color: rgb(0, 0, 0, 0.5);
+}
