@@ -50,8 +50,8 @@ for (let j = 0; j < newColor.length; j++) {
     newColor[j].addEventListener("click", function () {
         newColor[j].style.backgroundColor = "orange";
         newColor[j].style.color = "#000";
-        // alert(
-        //     "Ce site a été crée lors d'une formation ! \nIl n'est donc pas fonctionnelle."
-        // );
+        alert(
+            "Ce site a été crée lors d'une formation ! \nIl n'est donc pas fonctionnelle."
+        );
     });
 }
